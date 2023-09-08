@@ -8,7 +8,8 @@ Man brukar skilja mellan “Simpel” linjär regression och “Multipel” linj
   
 ### “Simpel” Linjär regression
 Simpel Linjär regression innebär att det endast finns endast en (1) oberoende variabel, kan då också kallas “linjär regression”. 
-  
+
+#### Ekvationen
 Just ordet “linjär” innebär att man försöker beskriva sambandet mellan den oberoende variabeln och den beroende variabeln linjärt (“längs en rät linje”), dvs med räta linjens ekvation, y = k*x + m, där 
 
 k = koefficienten, linjens lutning, även dy/dx 
@@ -21,8 +22,6 @@ x = oberoende variabeln. Ett annat namn på oberoende variabler är förklarande
 
 Metoden att anpassa värden på koefficienten (k) och skärningspunkten (m), för att erhålla den minsta avvikelsen från observationerna, kallas ***minsta kvadratmetoden***. 
 
- 
-
 ### Multipel linjär regression
 Om man har två eller fler oberoende variabler, kallas detta multipel linjär regression (MLR). Multipel linjär regression skiljer sig ganska mycket från (simpel) linjär regression. 
 
@@ -31,6 +30,7 @@ Första steget i analysen bör vara att fundera kring vilken eller vilka oberoen
 #### Kategorivariabler
 Oberoende variabler som inte är kvantifierbara kallas kategorivariabler. I vårt fall skulle den oberoende variabeln “område” vara av den typen. Andra kategorivariabler kan vara “man/kvinna”, “sant/falskt”, “nord/syd/ost/väst”, “ja/nej” osv. Kategorivariabler "översätts" till numeriska värden för att kunna hanteras matematiskt. Tex kan "ja" ha värdet 1 och "nej" värdet 0.
 
+#### Ekvationen
 Om man identifierar två oberoende variabler som man vill använda i sin analys, så kommer ekvationen se ut som följer: 
 
 y = β<sub>0</sub> + β<sub>1</sub>*x<sub>1</sub> + β<sub>2</sub>*x<sub>2</sub> + Ω, där:
@@ -55,21 +55,19 @@ När man har samlat in data, så ska man göra en del förberedande analys på d
 
 Testa de oberoende variablernas korrelation till den beroende variabeln. Detta för varje oberoende variabel. Görs genom ***scatterplots*** och ***statistiska verktyg***. Sytet är att identifiera om man valt oberoende variabler som har svag korrelation till den beroende variabeln. Oberoende variabler med svag korrelation till den beroende variabelns kan anses vara redundanta, ta bort dessa ur analysen. Behåll endast oberoende variabler som har stark korrelation med den beroende variabeln. 
 
-Testa de oberoende variablernas korrelation till de andra oberoende variablerna. Görs på samma sätt som beskrivits ovan. Här vill man att det ska vara svag korrelation mellan de oberoende variablerna. Baserat på analysen får man avgöra om man vill ta bort någon oberoende variabel. Om man har ett starkt samband mellan valda oberoende variabler kallas detta ***kolinjäritet***, vilket alltså ska undvikas. Tex, i vårt exempel, så kan man tänka sig att det finns en ganska stark korrelation mellan husets storlek och antal rum i huset. Dvs, ju större huset är så finns det troligen också fler rum. 
+Testa de oberoende variablernas korrelation till de andra oberoende variablerna. Görs på samma sätt som beskrivits ovan. Här vill man att det ska vara svag korrelation mellan de oberoende variablerna. Baserat på analysen får man avgöra om man vill ta bort någon oberoende variabel. Om man har ett starkt samband mellan valda oberoende variabler kallas detta ***kolinjäritet***, vilket alltså ska undvikas.
 
-### Parametersättning:
+### Parametersättning
 Nästa steg är att parametersätta koefficienterna för de oberoende variablerna. Eftersom det är två (eller fler) variabler, är det inte lika "enkelt" som för en variabel. Man använder dator i detta steget, involverar mycket matrisberäkningar.
 
 ### Utvärdera modellen
-När modellen är parametersatt kan man utvärdera den i syfte att försöka förstå om den är "rimlig". 
+När modellen är parametersatt kan man utvärdera den i syfte att försöka förstå om den är "rimlig". Viktiga metrics att ha koll på och lära sig om verkar vara R<sup>2</sup> (R-squared), variance, modellfel med flera. Utvärdera även modellen genom att prova mata den med test data för att kvantifera modellfel.
+
+### Driftsätt modellen och börja gör prediktioner
+Nästa steg är att göra använda modellen för att göra prediktioner. Om antalet oberoende variabler är litet, säg 5-10 stycken, så bör man enkelt kunna driftsätta detta tex i en
+-  Excel-"snurra"
+-  En funktion i Python med inputargument som motsvarar de oberoende variablerna
+-  En app i en mobiltelefon
  
 
-Vilka teknologier används i de olika stegen? 
 
-Scatterplots 
-
-Korrelationsanalys: Ett mått på korrelationen mellan den oberoende variabeln och den beroende variabeln R2 (R squared). Ett högt värde betyder hög korrelation. 
-
-I Python finns verktyg för att analysera. 
-
-Hur kan indriftsätta modellen? 
