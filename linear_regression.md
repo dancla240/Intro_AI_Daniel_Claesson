@@ -1,9 +1,7 @@
-## Beskriv hur linjär regression fungerar. 
+## Linjär Regression
 
-Linjär regression undersöker sambandet mellan en eller flera oberoende variabler och en beroende variabel. Metoden är grundläggande i Machine Learning. 
-
-I vårt fall är husets pris den beroende variabeln och husets storlek, antal rum, läge, skick osv, den eller de oberoende variablerna. 
-
+Linjär regression är en grundläggande metod i Machine Learning. Metoden bygger en modell som förklarar sambandet mellan en eller flera oberoende variabler och en beroende variabel.  
+Scenariot i vår uppgift är att förutspå huspris baserat på olika "features" såsom antalet rum, läge, husets storlek med mera. I detta scenario är husets pris den **beroende variabeln** och husets storlek, antal rum, läge, skick osv, den eller de **oberoende variablerna**.  
 Man brukar skilja mellan “Simpel” linjär regression och “Multipel” linjär regression (MLR). 
 
 “Simpel” Linjär regression innebär att det endast finns en oberoende variabel, kan då också kallas “linjär regression”. 
