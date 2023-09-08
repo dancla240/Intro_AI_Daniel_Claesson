@@ -20,7 +20,8 @@ y = beroende variabeln. Andra namn på beroende variabeln är responsvariabel el
 
 x = oberoende variabeln. Ett annat namn på oberoende variabler är förklarande variabler eller “feature” på engelska. 
 
-Metoden att anpassa värden på koefficienten (k) och skärningspunkten (m), för att erhålla den minsta avvikelsen från observationerna, kallas ***minsta kvadratmetoden***. 
+Metoden att anpassa värden på koefficienten (k) och skärningspunkten (m), för att erhålla den minsta avvikelsen från observationerna, kallas ***minsta kvadratmetoden***.  
+![Linjär Regression](/assets/LinjärRegression.png)
 
 ### Multipel linjär regression
 Om man har två eller fler oberoende variabler, kallas detta multipel linjär regression (MLR). Multipel linjär regression skiljer sig ganska mycket från (simpel) linjär regression. 
@@ -49,6 +50,7 @@ x<sub>1</sub> och x<sub>2</sub> = oberoende variablerna
 När man har valt oberoende variabler, så behöver man samla in data från ett antal försäljningar. Datan kan kanske hittas i någon databas över försäljningar? SQL?
 
 Innan man kan göra analys på datan behöver den ordnas i tabellform. Varje rad i tebellen innebär en observation. I tabellen ska man ha värden på sin beroende variabel, samt värden för den eller de oberoende variablerna som man har valt att undersöka. Datan kan sparas i en databas, en excel-fil eller en csv-fil, tex. Ett krav bör vara att den enkelt kan läsas in i Python. Datan kan också manuellt skrivas in som en variabel i Python, tex som en lista.
+![Tabell MLR, två oberoende variabler](/assets/multbyHand1.png)
 
 ### Analys av data:
 När man har samlat in data, så ska man göra en del förberedande analys på den. Syftet är att förstå om man gjort ett bra val av oberoende variabler. Man vill att oberoende variabler ska påverka den beroende variabeln (stark korrelation), men att de valda oberoende variablerna ska ha minimal påverkan sinsemellan. I vårt exempel, kan man misstänka att det finns ett samband mellan de oberoende variablerna "husets strolek" och "antal rum". Dvs, ju större huset är, desto fler rumm har det troligen.
