@@ -21,7 +21,7 @@ y = beroende variabeln. Andra namn på beroende variabeln är responsvariabel el
 x = oberoende variabeln. Ett annat namn på oberoende variabler är förklarande variabler eller “feature” på engelska. 
 
 Metoden att anpassa värden på koefficienten (k) och skärningspunkten (m), för att erhålla den minsta avvikelsen från observationerna, kallas ***minsta kvadratmetoden***.  
-![Linjär Regression](/assets/LinjärRegression.png)
+![Linjär Regression](/assets/LinjarRegression.png)
 
 ### Multipel linjär regression
 Om man har två eller fler oberoende variabler, kallas detta multipel linjär regression (MLR). Multipel linjär regression skiljer sig ganska mycket från (simpel) linjär regression. 
@@ -70,6 +70,31 @@ Nästa steg är att göra använda modellen för att göra prediktioner. Om anta
 -  Excel-"snurra"
 -  En funktion i Python med inputargument som motsvarar de oberoende variablerna
 -  En app i en mobiltelefon
+
+### Referenser
+[YT: Statistics 101: Multiple Linear Regression, The very Basic.](https://www.youtube.com/watch?v=dQNpSa-bq4M)
+
+[YT: Statistics 101: Multiple Linear Regression, Data Preparation:](https://www.youtube.com/watch?v=2I_AYIECCOQ)
+
+[YT: Statistics 101: Multiple Linear Regression, Evaluating basic models](https://www.youtube.com/watch?v=wPJ1_Z8b0wk&list=PLIeGtxpvyG-IqjoU8IiF0Yu1WtxNq_4z-&index=3)
+
+[YT: Statistics 101: Multiple Linear Regression, Dummy Variables](https://www.youtube.com/watch?v=fTfMdCQJz4s&list=PLIeGtxpvyG-IqjoU8IiF0Yu1WtxNq_4z-&index=5)
+
+[sv.wikipedia.org Minsta kvadratmetoden, Wikipedia:](https://sv.wikipedia.org/wiki/Minstakvadratmetoden)
+
+[sv.wikipedia.org Multipel linjär regression, Wikipedia:](https://sv.wikipedia.org/wiki/Multipel_linj%C3%A4r_regression)
+
+[hypergene.se Vad är en regressionsanalys och hur gör man?:](https://www.hypergene.se/sv/kunskapsbank/blogg/vad-ar-en-regressionsanalys-och-hur-gor-man/)
+
+[eddler.se Räta linjens ekvation:](https://eddler.se/lektioner/rata-linjens-ekvation/)
+
+[analyticssteps.com Steg i att jobba med MLR:](https://www.analyticssteps.com/blogs/multiple-linear-regression)
+
+[influentialpoints.com Multiple Linear Regression:](https://influentialpoints.com/Training/multiple_linear_regression-principles-properties-assumptions.htm)
+
+[science.nu Att bygga en statistisk modell, principer och metoder](https://science.nu/lektion/valja-variabler-statistisk-modell-regression-linjar-multipel-logistisk/)
+
+[statology.org MLR by hand:](https://www.statology.org/multiple-linear-regression-by-hand/)
  
 
 
